@@ -23,6 +23,6 @@ jobs:
         cache: maven
         
     - name: Execute tes
-      run: mvn clean test -Dsuite=sanity -x
+      run: mvn clean test -Dsuite=sanity -X
 
 
