@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Api test Suite">
+  <test thread-count="5" name="Api Test">
+    <classes>
+      <class name="com.apiautomation.demo.tests.AuthTests"/>
+      <class name="com.apiautomation.demo.tests.UpdateProfie"/>
+        <class name="com.apiautomation.demo.tests.GetProfile"/>
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,17 @@
+com\apiautomation\demo\base\UserManagementService.class
+com\apiautomation\demo\models\request\ProfileRequest$Builder.class
+com\api\listeners\TestListener.class
+com\apiautomation\demo\models\response\LoginResponse.class
+com\apiautomation\demo\models\request\ProfileRequest.class
+com\apiautomation\demo\base\AuthService.class
+com\apiautomation\demo\tests\ForgotPasswordTest.class
+com\apiautomation\demo\models\response\UserProfileResponse.class
+com\apiautomation\demo\tests\CreateUser.class
+com\apiautomation\demo\models\request\SignupRequest.class
+com\apiautomation\filters\LoggingFilter.class
+com\apiautomation\demo\tests\AuthTests.class
+com\apiautomation\demo\tests\UpdateProfie.class
+com\apiautomation\demo\models\request\SignupRequest$Builder.class
+com\apiautomation\demo\base\BaseService.class
+com\apiautomation\demo\models\request\LoginRequest.class
+com\apiautomation\demo\tests\GetProfile.class
