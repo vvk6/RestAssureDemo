@@ -6,6 +6,7 @@
       <class name="com.apiautomation.demo.tests.AuthTests"/>
       <class name="com.apiautomation.demo.tests.UpdateProfie"/>
         <class name="com.apiautomation.demo.tests.GetProfile"/>
+        <class name="com.apiautomation.demo.tests.CreateUser"/>
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
