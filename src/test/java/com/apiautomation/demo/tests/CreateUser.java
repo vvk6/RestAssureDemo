@@ -1,5 +1,6 @@
 package com.apiautomation.demo.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -25,6 +26,8 @@ public class CreateUser {
 	Response response = auth.signup(signupreq);
 	System.out.println( response.asPrettyString());
 	System.out.println( response.getStatusCode());
+	Assert.assertEquals( response.getStatusCode(), 200);
+	Assert.assertEquals( response.asPrettyString(), "User registered successfully");	
 	
 
 	
