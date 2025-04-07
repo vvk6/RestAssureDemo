@@ -3,6 +3,7 @@ package com.apiautomation.demo.tests;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.apiautomation.demo.base.AuthService;
 import com.apiautomation.demo.models.request.SignupRequest;
@@ -13,6 +14,7 @@ public class CreateUser {
 
 	@Test(description="creating a new user")
 	public void signupNewUser() {
+		SoftAssert softAssert = new SoftAssert();
 		AuthService auth = new AuthService();
 		//SignupRequest signupreq = new SignupRequest("Ramk","kRam123","kram.kendre@gmail.com","Tkukaram","kkendre","8377991234");
 		SignupRequest	signupreq =new SignupRequest.Builder()
@@ -26,8 +28,9 @@ public class CreateUser {
 	Response response = auth.signup(signupreq);
 	System.out.println( response.asPrettyString());
 	System.out.println( response.getStatusCode());
-	Assert.assertEquals( response.getStatusCode(), 200);
-	Assert.assertEquals( response.asPrettyString(), "User registered successfully");	
+	softAssert.assertEquals( response.getStatusCode(), 200);
+	softAssert.assertEquals( response.asPrettyString(), "User registered successfully");	
+	 softAssert.assertAll();
 	
 
 	
