@@ -27,7 +27,7 @@ public class CreateUser {
 		              .build();
 	Response response = auth.signup(signupreq);
 	System.out.println( response.asPrettyString());
-	System.out.println( response.getStatusCode());
+	
 	softAssert.assertEquals( response.getStatusCode(), 200);
 	softAssert.assertEquals( response.asPrettyString(), "User registered successfully");	
 	 softAssert.assertAll();
