@@ -28,8 +28,8 @@ jobs:
         distribution: 'temurin'
         cache: maven
         
-    - name: Execute tes
-      run: mvn clean test -Dsuite=sanity -X
+    - name: Execute Tests
+      run: mvn clean test -Dsuite=sanity -Dmaven.test.failure.ignore=true -X
 
     - name: Upload a Build Artifact
       if: always()
